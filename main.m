@@ -5,7 +5,7 @@
 //  Created by evan on 13-12-9.
 //  Copyright (c) 2013年 evan. All rights reserved.
 //
-//  Copyright (c) 2013年 evan. All rights reserved.
+//  Copyright (c) 2013年 evan. All rights 
 
 // 添加一行
 #import <UIKit/UIKit.h>
