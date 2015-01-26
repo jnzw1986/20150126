@@ -1,0 +1,162 @@
+  
+  //  [[UIApplication sharedApplication] registerForRemoteNotificationTypes:type];
+
+  if ([[UIApplication sharedApplication] respondsToSelector:@selector(isRegisteredForRemoteNotifications)])
+  {
+    // iOS 8 Notifications
+    [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge) categories:nil]];
+    
+    [[UIApplication sharedApplication] registerForRemoteNotifications];
+  }
+  else
+  {
+    // iOS < 8 Notifications
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:
+     (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound)];
+  }
+
+
+
+  //-- Set Notification
+  if ([application respondsToSelector:@selector(isRegisteredForRemoteNotifications)])
+  {
+    // iOS 8 Notifications
+    [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound | UIUserNotificationTypeAlert | UIUserNotificationTypeBadge) categories:nil]];
+    
+    [application registerForRemoteNotifications];
+  }
+  else
+  {
+    // iOS < 8 Notifications
+    [application registerForRemoteNotificationTypes:
+     (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeSound)];
+  }
+  
+  
+  #ifdef __IPHONE_8_0
+  if ([[UIApplication sharedApplication] respondsToSelector:@selector(isRegisteredForRemoteNotifications)])
+  {
+    [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:type categories:nil]];
+  }
+#else
+  [[UIApplication sharedApplication] registerForRemoteNotificationTypes:type];
+
+#endif
+
+       
+     
+     
+     
+      UINavigationController *msgNavController = [[UINavigationController alloc] initWithRootViewController:viewController];
+      [msgNavController.navigationBar setHidden:YES];
+      return [msgNavController autorelease];
+      
+      
+      {
+	    aps =     {
+	        alert = Weeeeee;
+	        badge = 0;
+	        sound = "";
+	    };
+	    mnc = "{\"id\":\"0001B210000000006VSN\",\"mnctype\":\"microemail\",\"servicecode\":\"83194f2d-abe5-43e9-9121-ee94137f9f3d\"}";
+	}, iIsShowDetail = YES
+	
+	同一设备，不同app获取的token不一样。
+	同一设备，同一app在不同系统版本下获取的token可能不一样。
+	
+	com.yonyou.app.NCQDBF130724A
+	com.yonyou.app.NXSCHE130225C
+	com.yonyou.app.SSTASK120815A
+	DownloadCenter
+	a122ab6b134306c237997e174fc4c37e91fac5a31dcd2ccc2a6ee14547990f81
+	a122ab6b 134306c2 37997e17 4fc4c37e 91fac5a3 1dcd2ccc 2a6ee145 47990f81
+	a122ab6b134306c237997e174fc4c37e91fac5a31dcd2ccc2a6ee14547990f81
+	04b0a358 b2c64e8b bd11b432 44ba93b1 262d53fa 9ef0e224 d35cad73 55f6168b
+	//12-04
+	288b093b 98de0ffe 0303a16c 74c8ae69 67d5ad54 fe904a8d 2d640cf1 360a1fa7
+	//evan
+	277b490d 6c3ed94d 2c8fd61c bf1b5524 7bf498e1 78e260ae add677ba 16a9d6f9
+	a6b175be 6553579f 19b2115d 222dad6d c83994be 893070a5 72a0539e 891c06c2
+	277b490d 6c3ed94d 2c8fd61c bf1b5524 7bf498e1 78e260ae add677ba 16a9d6f9
+	42c295f1 73007fbe 11158ebe 052174e6 6e9e9767 05375f6a f2963422 152eefe5
+	42c295f1 73007fbe 11158ebe 052174e6 6e9e9767 05375f6a f2963422 152eefe5
+	
+	42c295f173007fbe11158ebe052174e66e9e976705375f6af2963422152eefe5
+	、dd
+	90e2c791 0d802133 fc433064 21aa15c4 a0ddccd8 fa167591 88f75221 a06a5adc
+	//测试
+	99dc1071 32ae446c c405bad2 c79e19cc 3128fb34 22d92bb3 7c3bc918 8bae71d0
+	      {
+	    aps =     {
+	        alert = Weeeeee;
+	        badge = 0;
+	        sound = "";
+	    };
+	    mnc = "{\"id\":\"0001B210000000006VSN\",\"mnctype\":\"microemail\",\"servicecode\":\"83194f2d-abe5-43e9-9121-ee94137f9f3d\"}";
+	}, iIsShowDetail = YES
+	
+	
+	
+	0001B2100000000075WQ
+	0001B2100000000075WU
+	
+	
+{"aps":{"alert":"This is some fany message.","badge":1,"sound":"屁颠屁颠.wav"}}
+{"aps":{"alert":"啊啊啊 is some fany message.","badge":0,"sound":"屁颠屁颠.wav"}}
+{"aps":{"badge":10,"sound":"屁颠屁颠.wav"}}
+
+{"aps":{"alert":"This is some fany message.","badge":1,"sound":"屁颠屁颠.wav"}}"category" : "ACTIONABLE"
+{"aps":{"alert":"aa","badge":1,"sound":""},"mnc":"{\"id\":\"0001B210000000006VSN\",\"mnctype\":\"microemail\",\"servicecode\":\"83194f2d-abe5-43e9-9121-ee94137f9f3d\"}"}
+
+{"aps":{"alert":"aa","badge":1,"sound":""},"mnc":"{\"id\":\"0001B210000000006VSN\",\"mnctype\":\"microemail\",\"servicecode\":\"83194f2d-abe5-43e9-9121-ee94137f9f3d\"}","iIsShowDetail":"YES"}
+
+{"aps":{"alert":"aa","badge":1,"sound":""},"m":"{\"s\":\"b9b10485-da62-4cb6-ad1a-1b29cd869c38\",\"i\":\"micromailid000000001\",\"y\":\"msg\"}"}
+
+//移动审批
+{"aps":{"alert":"aa","badge":1,"sound":""},"m":"{\"s\":\"7eb28078-7b3e-4cc7-aa3e-a4fa13aa0599\",\"i\":\"2012002\",\"k\":\"ishandled\",\"c\":\"unhandled\"}"}
+{"aps":{"alert":"aa","badge":1,"sound":""},"m":"{\"s\":\"7eb28078-7b3e-4cc7-aa3e-a4fa13aa0599\",\"i\":\"2012001\",\"k\":\"ishandled\",\"c\":\"unhandled\"}"}
+
+
+{"aps":{"alert":"aa","badge":1,"sound":""},"m":{"s":"b9b10485-da62-4cb6-ad1a-1b29cd869c38","i":"micromailid000000001","y":"1"}}
+
+//现场服务
+{"aps":{"alert":"aa","badge":1,"sound":""},"m":"{\"s\":\"6e48860c-7505-4c68-94db-65f1617297d7\",\"i\":\"0001ZU1000000000F9JV\",\"y\":\"msg\"}"}
+
+
+
+"mnc":{"id":"0001B210000000006VSN","mnctype":"microemail","servicecode":"83194f2d-abe5-43e9-9121-ee94137f9f3d"}
+
+{aps ={	        alert = Weeeeee;
+	        badge = 0;
+	        sound = "";
+	    };
+	    mnc = "{\"id\":\"0001B210000000006VSN\",\"mnctype\":\"microemail\",\"servicecode\":\"83194f2d-abe5-43e9-9121-ee94137f9f3d\"}";
+	}, iIsShowDetail = YES
+	
+	
+	
+	PushMeBaby 使用提醒
+	测试证书：address ：gateway.sandbox…
+	certificate Type : p12   密码：11111
+	选中p12
+	Log显示：SSLWrite(): 0 120  正常。
+	程序退至后台运行(代码做的判断，如果在当前运行状态不弹提示)
+	token必须中间有分隔符。。。。。
+	push的内容要有反斜杠。‘’
+	
+	推送通知有256字节的限制，所以一次推送不能推送太多内容
+	推送的服务器必须联网偶。。
+	
+	前提：
+	首先要获取token。ios8中获取token的api已发送变化。用xcode6编译原ios7代码将获取不到token。
+	如果用xcode5 编译原ios7代码可以获取token，同时运行在ios7、ios8上均可获取token
+	
+	注意：测试和发布链接的地址不同
+	apns测试环境:gateway.sandbox.push.apple.com
+  apns正式环境:gateway.push.apple.com
+  
+  
+  1、只接受角标，不弹提示信息。（只发送角标信息）。内容：{"aps":{"badge":10,"sound":"屁颠屁颠.wav"}}
+  2、只接收通知，角标不变。（去掉badge字段） 内容：{"aps":{"alert":"0 is some fany message.","sound":"屁颠屁颠.wav"}}
+  3、接收通知，角标清空（传alert，badge为0） 内容：{"aps":{"alert":"This is some fany message.","badge":0,"sound":"屁颠屁颠.wav"}}    该情况下弹出信息后，通知栏中不会再找到消息。
+  4、可以通过代码进行清空通知栏信息（清除角标数）：[[UIApplication sharedApplication] setApplicationIconBadgeNumber: 0];
