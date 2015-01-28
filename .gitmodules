@@ -1,9 +1,3 @@
 [submodule "lib"]
 	path = lib
 	url = /workspace/2015-01/20150127_lib
-[submodule "lib_comon"]
-	path = lib_comon
-	url = /workspace/2015-01/20150127_lib
-[submodule "lib_1"]
-	path = lib_1
-	url = https://jnzw1986@github.com/jnzw1986/common_lib.git
